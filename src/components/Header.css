@@ -1,0 +1,115 @@
+.header {
+  padding-bottom: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.freeShipping {
+  background-color: #ff4c8b;
+  padding: 20px;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center; /* Ensures text is centered */
+}
+
+.navbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  gap: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align items in the navbar */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.searchBarContainer {
+  background-color: #ff4c8b;
+  width: 100%;
+  max-width: 300px; /* Maximum width for larger screens */
+  height: 40px;
+  color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px; /* Add rounded corners for a softer look */
+}
+
+.searchBarContainer input {
+  width: 80%; /* Adjust width for better responsiveness */
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.searchBar {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.searchButton {
+  padding: 5px 10px;
+  background-color: #ff4c8b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners for the button */
+}
+
+.navIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.navButton {
+  background-color: #ff4c8b;
+  color: #fff;
+  border: none;
+  width: 100px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the icon/button text */
+  border-radius: 4px; /* Rounded corners for buttons */
+}
+
+.box-icon {
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .searchBarContainer {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: none; /* Remove maximum width */
+  }
+
+  .searchBarContainer input {
+    width: 100%; /* Full width on smaller screens */
+
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .navButton {
+    width: 80%; /* Adjust button width for smaller screens */
+    max-width: 200px; /* Maximum width */
+  }
+
+  .freeShipping {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}

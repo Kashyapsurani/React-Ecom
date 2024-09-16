@@ -1,0 +1,42 @@
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main-card{
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.First-card{
+  width: 400px;
+  height:430px;
+  border: 1px solid black;
+}
+
+.First-card img{
+  border-radius: 8px;
+}
+
+.First-card p{
+  color: green;
+  font-weight: 600;
+  font-size: large;
+}
+
+.First-card select{
+ width: 100%;
+ height: 30px;
+}
+
+.First-card .Addtocart button{
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+ }
+ /* Secend-card */
+
+ 
