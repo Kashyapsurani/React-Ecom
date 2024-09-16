@@ -5,20 +5,33 @@ function ProductCard({ image, name, option1, option2, option3 }) {
 
 
   const [price, setPrice] = useState(option1[1]);
+  const [weights,setWeight] = useState(option1[0])
+
 
   const handleChange = (event) => {
     const selectedOption = event.target.value;
 
-    setPrice(selectedOption)
+    const myArr = selectedOption.split(",");
+    
+    let weight,newPrice
+
+    [weight,newPrice] = myArr;
+
+    setPrice(newPrice)
+
+    setWeight(weight)
+
 
   };
+
+  console.log(weights)
 
 
   function onClicks() {
     const userdata = {
         price : price,
         name : name,
-        unit : option1[0]
+        weight : weights
       }
     
       console.log(userdata)
@@ -37,9 +50,9 @@ function ProductCard({ image, name, option1, option2, option3 }) {
           <p>$ {price}</p>
             
           <select onChange={handleChange}>
-            <option value={option1[1,0]}>{option1[0]}</option>
-            <option value={option2[1,0]}>{option2[0]}</option>
-            <option value={option3[1,0]}>{option3[0]}</option>
+            <option value={option1}>{option1[0]}</option>
+            <option value={option2}>{option2[0]}</option>
+            <option value={option3}>{option3[0]}</option>
           </select>
 
           <div className="Addtocart">
